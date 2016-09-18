@@ -1,0 +1,35 @@
+{
+  "name": "negate-promise",
+  "version": "1.0.0",
+  "description": "Negate a promise, reject resolved promise, resolve rejected promise",
+  "main": "index.js",
+  "keywords": [
+    "negate",
+    "promise",
+    "reject",
+    "resolve"
+  ],
+  "author": "Tan Li Hau <lhtan93@gmail.com> (http://lihautan.com)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanhauhau/negate-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tanhauhau/negate-promise/issues"
+  },
+  "homepage": "https://github.com/tanhauhau/negate-promise#readme"
+}
