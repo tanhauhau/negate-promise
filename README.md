@@ -58,14 +58,17 @@ negate(1).then(function(){
 # Documentation
 
 *negate(promise)*
+
 Return a rejected promise if the promise passed in is resolved, and a resolved promise if the promise passed in is rejected.
 > *IKR, it's lengthy, but basically it means, 'negate your promise'*
 
 *negate(function)*
+
 Return a function that will return a negated promise.
 > *Basically it means, 'promisify your function and negate that promise'*
 
 *negate(others)*
+
 Return a rejected promise.
 
 
