@@ -4,20 +4,17 @@ module.exports = function(promiseOrFn) {
             promiseOrFn.then(reject, resolve);
         });
     } else if(promiseOrFn instanceof Function) {
-        return function(){
-            var args = [].slice.call(arguments);
+        return (...args) => {
             return new Promise(function(resolve, reject) {
-                args.push(function cb(err, data){
+                promiseOrFn(...args, (err, data) => {
                     if(err){
                         resolve(err);
                     }else{
                         reject(data);
                     }
                 });
-                promiseOrFn.apply(null, args);
             });
         };
-    } else {
-        return Promise.reject('Wrong argument type. Must be either \'Promise\' or \'Function\'');
     }
+    return Promise.reject('Wrong argument type. Must be either \'Promise\' or \'Function\'');
 }
