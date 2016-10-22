@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/negate-promise.svg?style=flat-square)](https://npmjs.org/package/negate-promise)
 [![LICENSE](http://img.shields.io/npm/l/api-error-handler.svg?style=flat-square)](LICENSE)
+[![codecov](https://codecov.io/gh/tanhauhau/negate-promise/branch/master/graph/badge.svg)](https://codecov.io/gh/tanhauhau/negate-promise)
 
 Negate a promise, reject resolved promise, resolve rejected promise
 
